@@ -144,6 +144,99 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Snapgene哪里被攻破了？" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/02/17/Snapgene%E5%93%AA%E9%87%8C%E8%A2%AB%E6%94%BB%E7%A0%B4%E4%BA%86%EF%BC%9F/">Snapgene哪里被攻破了？</a>
+    </h1>
+  
+
+        
+        <a href="/2021/02/17/Snapgene%E5%93%AA%E9%87%8C%E8%A2%AB%E6%94%BB%E7%A0%B4%E4%BA%86%EF%BC%9F/" class="archive-article-date">
+  	<time datetime="2021-02-17T13:48:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-02-17</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>提前声明，本文只探讨技术，折腾软件纯属爱好，使用snapgene请购买正版。先来点最基础的知识！</p>
+<h2 id="snapgene版本"><a href="#snapgene版本" class="headerlink" title="snapgene版本"></a>snapgene版本</h2><p>　　在官网的版本发布日志上找找相关信息。每页一个大版本，（下图）浏览体验不错。发布信息总结一下：</p>
+<ol>
+<li>只有大版本才会有重大功能更新。小版本以修复为主。</li>
+<li>5.x版本之前最高版本是4.3.11。结合上一条，主要功能上4.3.11等于4.3。</li>
+<li>广为人知的4.3.6版本功能已经足够全面，能用好了也算是大佬。</li>
+</ol>
+<div align="center"> <img src="https://i.loli.net/2021/02/17/VtI5KMhxWZGdr81.png" width="30%" height="25%"> </div>
+
+<p>　　综上所述，用不上最高版本也没啥，足够了。实在想用最新版，换着邮箱申请试用也行。（本白嫖怪受不起这委屈！！不是最高版本就难受）</p>
+<h2 id="4-3-6版本是怎么被攻破的？"><a href="#4-3-6版本是怎么被攻破的？" class="headerlink" title="4.3.6版本是怎么被攻破的？"></a>4.3.6版本是怎么被攻破的？</h2><div align="center"> <img src="https://i.loli.net/2021/02/17/134zBmaMukDPnst.png" width="70%" height="30%"> </div>
+
+<p>　　首先分析一下步骤。第三步是第一个重要步骤。这个注册机是对snapgene.exe主程序进行修改。但第四步又把snapgene.exe替换掉了，所以注册机相当于没有修改。那注册机还干了啥？存储软件配置信息的位置就那么几个，果然在AppData/Roaming里找到了snapgene相关文件夹。注册机注册后文件夹里多了一个文件，看一下内容，好家伙！网卡和蓝牙的mac地址都写进去了。这或许就是软件绑定机器的原理。  </p>
+<div align="center"> <img src="https://i.loli.net/2021/02/17/PFtj97wpKVSGCEl.png" width="70%" height="30%"> </div> 
+
+<p>　　那第四步的那个snapgene.exe又有什么不一样？对比一下就知道了。看看就知道了。上面是修改版的，下面是官方版。可以看到除了第一行字符是不能分辨的之外，其他地方都是将个别字符修改成x。这就使程序中涉及验证激活和许可的相关功能不能正常运行，破解成功！那么我的推论就是这文件是手工修改来的，应该是在调试器中边运行边调试修改逻辑关系和文件名。有个小细节，snapgene.com也被修改成.cxm。这会导致不能访问snapgene质粒库。</p>
+<div align="center"> <img src="https://i.loli.net/2021/02/17/PSluAUoQXZrMfWV.png" width="70%" height="30%"> </div> 
+
+<h2 id="5-2版本又是怎么被攻破的？"><a href="#5-2版本又是怎么被攻破的？" class="headerlink" title="5.2版本又是怎么被攻破的？"></a>5.2版本又是怎么被攻破的？</h2><p>　　实际操作很简单。将几个文件复制到文件目录就行。我对这几个文件进行深挖的时候发现，我知识不够了，挖不下去。说最浅显的结论就是，修改内存数据，劫持程序语句运行，屏蔽验证许可相关功能。有兴趣学习的小伙伴可以去吾爱破解论坛、飘云阁论坛、学破解论坛学习程序逆向相关知识。  </p>
+<div align="center"> <img src="https://i.loli.net/2021/02/18/zenlg9FLwcP83KI.png" width="70%" height="30%"> </div>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">snapgene</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/02/17/Snapgene%E5%93%AA%E9%87%8C%E8%A2%AB%E6%94%BB%E7%A0%B4%E4%BA%86%EF%BC%9F/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-如何快速下载基因组数据库" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -535,7 +628,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2020 钢铁直男
+    		&copy; 2021 钢铁直男
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -618,15 +711,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">snapgene</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">随笔</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">考研</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">资料</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -639,6 +728,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">路由器</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">考研</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">资料</a>
               </li>
             
             <div class="clearfix"></div>

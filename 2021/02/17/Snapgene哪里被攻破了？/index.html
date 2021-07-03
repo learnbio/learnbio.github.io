@@ -45,7 +45,7 @@
 
   
 
-<meta name="generator" content="Hexo 4.2.0"></head>
+<meta name="generator" content="Hexo 5.4.0"></head>
 
 <body>
   <div id="container" q-class="show:isCtnShow">
@@ -59,7 +59,7 @@
 			<img src="https://i.loli.net/2020/03/11/3hiykto61lOsKrJ.jpg" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">钢铁直男</a></h1>
+		  <h1 class="header-author"><a href="/"></a></h1>
 		</hgroup>
 		
 
@@ -113,7 +113,7 @@
 				<img src="https://i.loli.net/2020/03/11/3hiykto61lOsKrJ.jpg" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">钢铁直男</h1>
+			  <h1 class="header-author js-header-author"></h1>
 			</hgroup>
 			
 			
@@ -189,10 +189,10 @@
 
 <p>　　首先分析一下步骤。第三步是第一个重要步骤。这个注册机是对snapgene.exe主程序进行修改。但第四步又把snapgene.exe替换掉了，所以注册机相当于没有修改。那注册机还干了啥？存储软件配置信息的位置就那么几个，果然在AppData/Roaming里找到了snapgene相关文件夹。注册机注册后文件夹里多了一个文件，看一下内容，好家伙！网卡和蓝牙的mac地址都写进去了。这或许就是软件绑定机器的原理。  </p>
 <div align="center"> <img src="https://i.loli.net/2021/02/17/PFtj97wpKVSGCEl.png" width="70%" height="30%"> </div> 
-
+  
 <p>　　那第四步的那个snapgene.exe又有什么不一样？对比一下就知道了。看看就知道了。上面是修改版的，下面是官方版。可以看到除了第一行字符是不能分辨的之外，其他地方都是将个别字符修改成x。这就使程序中涉及验证激活和许可的相关功能不能正常运行，破解成功！那么我的推论就是这文件是手工修改来的，应该是在调试器中边运行边调试修改逻辑关系和文件名。有个小细节，snapgene.com也被修改成.cxm。这会导致不能访问snapgene质粒库。</p>
 <div align="center"> <img src="https://i.loli.net/2021/02/17/PSluAUoQXZrMfWV.png" width="70%" height="30%"> </div> 
-
+  
 <h2 id="5-2版本又是怎么被攻破的？"><a href="#5-2版本又是怎么被攻破的？" class="headerlink" title="5.2版本又是怎么被攻破的？"></a>5.2版本又是怎么被攻破的？</h2><p>　　在snapgene5出现以后，有很长一段时间snapgene都没有可用的破解版出现。网上所谓的破解版都无法使用。问题都是不能显示图谱。<div  align="center"> <img src="https://i.loli.net/2021/02/21/ZfdwkJ1zgqp8rQU.png" width="50%" height="30%"> </div><br>　　他们的步骤都是替换官方的主程序文件。对比一下官方的和破解的文件就看出来，破解文件太小了，删掉了多少代码才变成这么小啊！！猜测应该是想删掉验证相关代码，结果连着功能相关代码一起删掉了。<br>  <div  align="center"> <img src="https://i.loli.net/2021/02/21/UwmnVIeRFWfDiYk.png" width="50%" height="30%"> </div><br>　　当然也有破解成功的例子。实际操作很简单。将几个文件复制到文件目录就行。我对这几个文件进行深挖的时候发现，我知识不够了，挖不下去。说最浅显的结论就是，修改内存数据，劫持程序语句运行，屏蔽验证许可相关功能。有兴趣学习的小伙伴可以去吾爱破解论坛、飘云阁论坛、学破解论坛学习程序逆向相关知识。  </p>
 <div  align="center"> <img src="https://i.loli.net/2021/02/18/q2dkLRlMXDWfEpP.png" width="70%" height="30%"> </div>
       
@@ -297,6 +297,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2021/07/03/%E6%B5%81%E5%BC%8F%E7%BB%86%E8%83%9E%E4%BB%AA%E7%94%B5%E6%BA%90%E6%9D%BF%E7%BB%B4%E4%BF%AE%E8%AE%B0/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          流式细胞仪电源板维修记
+        
+      </div>
+    </a>
   
   
     <a href="/2020/11/09/%E5%A6%82%E4%BD%95%E5%BF%AB%E9%80%9F%E4%B8%8B%E8%BD%BD%E5%9F%BA%E5%9B%A0%E7%BB%84%E6%95%B0%E6%8D%AE%E5%BA%93/" id="article-nav-older" class="article-nav-link-wrap">

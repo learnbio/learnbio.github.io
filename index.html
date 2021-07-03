@@ -166,18 +166,9 @@
       
         <p>开局先来一张图看看今天的主角是什么样子。    </p>
 <div  align="center"> <img src="https://i.loli.net/2020/11/08/mP9ZcGQoDA1XqYV.jpg" width="70%" height="70%"> </div>
-
-<h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><p>　　2020年6月师兄师姐们开学后来到学校，老师想起来一个近乎被人忘记的实验，说要把最后一步做完。这个实验用到了流式细胞仪。在安排实验流程的时候我提议先去看看仪器情况，保证正常工作再开始进行实验（就知道这仪器娇气）。果不其然，出问题了。。    </p>
-<h2 id="症状"><a href="#症状" class="headerlink" title="症状"></a>症状</h2><p>　　首先是前向信号，几乎检测不到任何信号！这是很反常的现象。理由有以下几点：    </p>
-<ul>
-<li>前向检测器是对位置不敏感的检测器。换句话说就是任意调整前向的上下左右位置，都是可以看到信号的。调整后FSC vs. SSC散点图可能会变化，但绝不会没信号。</li>
-<li>FSC的进光量非常大！以至于前向检测器没有使用高灵敏度的PMT,而是使用光电二极管为检测器。甚至FSC前面会放置一个遮光板来遮挡大部分的激光。</li>
-<li>按平常情况，FSC作为trigger时，会有10+的EPS（events per second）。这是本底信号。    </li>
-</ul>
-<p>　　然后是侧向通道，包括所有的荧光通道，都！没！有！信！号！任我怎么调整滤光片位置，它就是信号极低极低！做实验根本不用想。<br>　　得知机器不正常后几天时间里我经历了懵逼、疑问、冷静，这几天里我调试、分析、思考。最后得出结论，它有故障而且不是我能解决得了的了。。。    </p>
-<h2 id="排查故障"><a href="#排查故障" class="headerlink" title="排查故障"></a>排查故障</h2><p>　　厂家工程师来后按习惯思维认为是光路没调试好，于是自己动手。调了俩小时后翻车，各方求助后开始检查电路问题，最终发现电源板的-15V电压没有产生。而这个-15V是前级放大器工作必需的电压。<br>  <div  align="center"> <img src="https://i.loli.net/2021/07/03/lIq71W9ZgwFCmjD.jpg" width="70%" height="70%"> </div>  </p>
-<h2 id="维修"><a href="#维修" class="headerlink" title="维修"></a>维修</h2><p>　　工程师发现是电路故障，就拆出来故障电路板核对零件号找报价。拆的时候还不忘了问一句我你们课题组有钱吗。最终报出价格让我立马心凉了。<div  align="center"> <img src="https://i.loli.net/2021/07/03/253fyjnlJo7wzqr.jpg" width="70%" height="70%"> </div><br>　　指望厂家短时间解决故障是不可能了，检查了板子发现也没有明显损伤。那就不是大问题。求人不如求自己，东瞧瞧西瞅瞅，发现了不对劲的地方。有个电容爆掉了。<br>  <div  align="center"> <img src="https://i.loli.net/2021/07/03/UVDLCd5x9Qgpl63.jpg" width="70%" height="70%"> </div><br>　　换个电容而已，淘宝3块钱下单。老板说赶紧修，给我用顺丰，于是邮费23块。换掉电容后工作正常了。喜悦的是仪器修好了，悲伤的是接下来有一堆实验。。<br>  <div  align="center"> <img src="https://i.loli.net/2021/07/03/OF3Ujho2fXEe7C6.jpg" width="70%" height="70%"> </div></p>
-
+        
+          <a class="article-more-a" href="/2021/07/03/%E6%B5%81%E5%BC%8F%E7%BB%86%E8%83%9E%E4%BB%AA%E7%94%B5%E6%BA%90%E6%9D%BF%E7%BB%B4%E4%BF%AE%E8%AE%B0/#more">more >></a>
+        
       
 
       
@@ -240,25 +231,10 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>提前声明，本文只探讨技术，折腾软件纯属爱好，使用snapgene请购买正版。先来点最基础的知识！</p>
-<h2 id="snapgene版本"><a href="#snapgene版本" class="headerlink" title="snapgene版本"></a>snapgene版本</h2><p>　　在官网的版本发布日志上找找相关信息。每页一个大版本，（下图）浏览体验不错。发布信息总结一下：</p>
-<ol>
-<li>只有大版本才会有重大功能更新。小版本以修复为主。</li>
-<li>5.x版本之前最高版本是4.3.11。结合上一条，主要功能上4.3.11等于4.3。</li>
-<li>广为人知的4.3.6版本功能已经足够全面，能用好了也算是大佬。</li>
-</ol>
-<div align="center"> <img src="https://i.loli.net/2021/02/17/VtI5KMhxWZGdr81.png" width="30%" height="25%"> </div>
-
-<p>　　综上所述，用不上最高版本也没啥，足够了。实在想用最新版，换着邮箱申请试用也行。（本白嫖怪受不起这委屈！！不是最高版本就难受）</p>
-<h2 id="4-3-6版本是怎么被攻破的？"><a href="#4-3-6版本是怎么被攻破的？" class="headerlink" title="4.3.6版本是怎么被攻破的？"></a>4.3.6版本是怎么被攻破的？</h2><div align="center"> <img src="https://i.loli.net/2021/02/17/134zBmaMukDPnst.png" width="70%" height="30%"> </div>
-
-<p>　　首先分析一下步骤。第三步是第一个重要步骤。这个注册机是对snapgene.exe主程序进行修改。但第四步又把snapgene.exe替换掉了，所以注册机相当于没有修改。那注册机还干了啥？存储软件配置信息的位置就那么几个，果然在AppData/Roaming里找到了snapgene相关文件夹。注册机注册后文件夹里多了一个文件，看一下内容，好家伙！网卡和蓝牙的mac地址都写进去了。这或许就是软件绑定机器的原理。  </p>
-<div align="center"> <img src="https://i.loli.net/2021/02/17/PFtj97wpKVSGCEl.png" width="70%" height="30%"> </div> 
-  
-<p>　　那第四步的那个snapgene.exe又有什么不一样？对比一下就知道了。看看就知道了。上面是修改版的，下面是官方版。可以看到除了第一行字符是不能分辨的之外，其他地方都是将个别字符修改成x。这就使程序中涉及验证激活和许可的相关功能不能正常运行，破解成功！那么我的推论就是这文件是手工修改来的，应该是在调试器中边运行边调试修改逻辑关系和文件名。有个小细节，snapgene.com也被修改成.cxm。这会导致不能访问snapgene质粒库。</p>
-<div align="center"> <img src="https://i.loli.net/2021/02/17/PSluAUoQXZrMfWV.png" width="70%" height="30%"> </div> 
-  
-<h2 id="5-2版本又是怎么被攻破的？"><a href="#5-2版本又是怎么被攻破的？" class="headerlink" title="5.2版本又是怎么被攻破的？"></a>5.2版本又是怎么被攻破的？</h2><p>　　在snapgene5出现以后，有很长一段时间snapgene都没有可用的破解版出现。网上所谓的破解版都无法使用。问题都是不能显示图谱。<div  align="center"> <img src="https://i.loli.net/2021/02/21/ZfdwkJ1zgqp8rQU.png" width="50%" height="30%"> </div><br>　　他们的步骤都是替换官方的主程序文件。对比一下官方的和破解的文件就看出来，破解文件太小了，删掉了多少代码才变成这么小啊！！猜测应该是想删掉验证相关代码，结果连着功能相关代码一起删掉了。<br>  <div  align="center"> <img src="https://i.loli.net/2021/02/21/UwmnVIeRFWfDiYk.png" width="50%" height="30%"> </div><br>　　当然也有破解成功的例子。实际操作很简单。将几个文件复制到文件目录就行。我对这几个文件进行深挖的时候发现，我知识不够了，挖不下去。说最浅显的结论就是，修改内存数据，劫持程序语句运行，屏蔽验证许可相关功能。有兴趣学习的小伙伴可以去吾爱破解论坛、飘云阁论坛、学破解论坛学习程序逆向相关知识。  </p>
-<div  align="center"> <img src="https://i.loli.net/2021/02/18/q2dkLRlMXDWfEpP.png" width="70%" height="30%"> </div>
+<h2 id="snapgene版本"><a href="#snapgene版本" class="headerlink" title="snapgene版本"></a>snapgene版本</h2><p>　　在官网的版本发布日志上找找相关信息。每页一个大版本，（下图）浏览体验不错。发布信息总结一下：<br>
+        
+          <a class="article-more-a" href="/2021/02/17/Snapgene%E5%93%AA%E9%87%8C%E8%A2%AB%E6%94%BB%E7%A0%B4%E4%BA%86%EF%BC%9F/#more">more >></a>
+        
       
 
       
